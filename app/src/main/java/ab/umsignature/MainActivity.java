@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
 	private Button mClearButton;
 	private Button mSaveButton;
 
-	private RelativeLayout signature_pad_container;
+	private RelativeLayout signature;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mSignaturePad = (SignaturePad) findViewById(R.id.signature_pad);
-		signature_pad_container = (RelativeLayout) findViewById(R.id.signature_pad_container);
+		signature = (RelativeLayout) findViewById(R.id.signature_pad_container);
 		mSignaturePad.setOnSignedListener(new SignaturePad.OnSignedListener() {
 			@Override
 			public void onSigned() {
