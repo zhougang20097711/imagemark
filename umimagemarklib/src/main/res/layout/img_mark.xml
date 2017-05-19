@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+>
+    <ab.umimagemarklib.ImageMark
+        android:id="@+id/imagemark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutbottom"
+    >
+<ImageView
+android:id="@+id/imagebg"
+android:scaleType="centerCrop"
+android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    </ab.umimagemarklib.ImageMark>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    android:background="#e1e1e1"
+        android:text="保存"
+        android:padding="4dp"
+              android:textSize="16sp"
+              android:textColor="#333"
+    />
+    <LinearLayout
+        android:id="@+id/layoutbottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+    >
+        <ImageView
+            android:id="@+id/btnrect"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/mark_shape"
+        />
+
+        <ImageView
+            android:id="@+id/btnarrow"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:padding="5dp"
+            android:src="@drawable/mark_arrow"/>
+        <ImageView
+            android:id="@+id/btntext"
+            android:layout_width="40dp" android:layout_height="40dp"
+                   android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+                   android:src="@drawable/mark_text"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/btncancel"
+            android:layout_width="40dp" android:layout_height="40dp"
+                   android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+                   android:src="@drawable/mark_delete"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutshape"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="#60e1e1e1"
+        android:visibility="gone"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutcolor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="#60e1e1e1"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"/>
+    <View
+        android:id="@+id/line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:visibility="gone"
+        android:layout_width="match_parent" android:layout_height="1dp" android:background="#e1e1e1"/>
+</RelativeLayout>

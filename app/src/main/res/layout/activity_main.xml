@@ -4,40 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
->
-    <RelativeLayout
-        android:id="@+id/signature_pad_container"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_above="@+id/buttons_container" >
-        <ab.umsignaturelib.SignaturePad
-            android:id="@+id/signature_pad"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-    </RelativeLayout>
+    android:background="@mipmap/bg"
+  >
 
-    <LinearLayout
-        android:id="@+id/buttons_container"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+
+  <ab.umimagemarklib.ImageMark
+      android:id="@+id/imagemark"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+    ></ab.umimagemarklib.ImageMark>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:paddingTop="16dp" >
-
-        <Button
-            android:id="@+id/clear_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:enabled="false"
-            android:text="清除" />
-
-        <Button
-            android:id="@+id/save_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:enabled="false"
-            android:text="确定" />
-    </LinearLayout>
+        android:text="ADD"/>
 </RelativeLayout>
